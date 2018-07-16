@@ -21,16 +21,20 @@ public class TwoNumCalculator {
         average=(num1+num2)/2;
 
 
-        if (sum > 200){
-            System.out.println("The sum of the two numbers is " + sum + " *");
+        if (sum < 200){
+            System.out.println("The sum of the two numbers is " + sum + " ~");
             System.out.println("The product of the two numbers is " + product);
             System.out.println("The average of the two numbers is " + average);
         }
-        else {
-            System.out.println("The sum of the two numbers is " + sum);
+        else if(sum > 200 && sum <1000)  {
+            System.out.println("The sum of the two numbers is " + sum + " *~");
             System.out.println("The product of the two numbers is " + product);
             System.out.println("The average of the two numbers is " + average);
 
+        } else{
+            System.out.println("The sum of the two numbers is " + sum);
+            System.out.println("The product of the two numbers is " + product);
+            System.out.println("The average of the two numbers is " + average);
         }
 
     }
